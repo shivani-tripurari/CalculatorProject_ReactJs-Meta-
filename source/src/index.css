@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Cedarville+Cursive&family=Nunito+Sans:opsz,wght@6..12,500&family=Poppins&family=Taviraj:ital@1&family=VT323&display=swap');
+
+
+:root{
+  --primary: #d81e5b;
+  --secondary: #5f94cd;
+  --dark: #131313;
+  --light: #eee;
+  --hover: #434242;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--light);
+}
+.App-header{
+  font-size: 68px;
+  padding-bottom: 44px;
+}
+.Calculator{
+  width: 100%;
+  max-width: 640px;
+  background-color: var(--dark);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0px 2px 64px rgba(53, 53, 53, 0.2);
+}
+.Display{
+  padding: 16px;
+  text-align: right;
+  font-size: 72px;
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+span{
+  font-size: 24px;
+  font-family: "VT323", monospace;
+  font-weight: 200;
+  font-style: normal;
+  color: #757474;
+}
+button{
+  appearance: none;
+  outline: none;
+  border: none;
+  background-color: var(--dark);
+  color: var(--light);
+  font-size: 36px;
+  cursor: pointer;
+  padding: 24px;
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  transition: 0.4s;
+}
+button:hover{
+  opacity: 0.9;
+}
+.operators{
+  display: flex;
+}
+.operators button{
+  flex: 1 1 0%;
+  background-color: var(--primary);
+  font-weight: 600;
+  font-size: 36px;
+}
+.Digits{
+  display: flex;
+  flex-wrap: wrap;
+}
+.Digits button{
+  flex: 1 1 33.333%;
+  max-width: 33.333%;
+  transition: 0.4s;
+}
+.Digits button:hover{
+  background-color: var(--hover);
+  opacity: 0.45;
+}
